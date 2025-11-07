@@ -71,6 +71,20 @@
 <h1>{userName}</h1>
 ```
 
+**CSS styling & Dynamic Styling**
+
+```
+function TabButton({ children, onSelect, isActive }) {
+  return (
+    <li>
+      <button className={isActive ? 'active' : ''} onClick={onSelect}>
+        {children}
+      </button>
+    </li>
+  );
+}
+```
+
 **React Projects & “The Build Process”**
 
 ![alt text](./lecture_note/Section3_004.png)
